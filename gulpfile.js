@@ -1,19 +1,40 @@
 var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	fileinclude = require('gulp-file-include'),
-	del = require('del');
+	del = require('del'),
+	watch = require('gulp-watch');
+
 
 gulp.task('clean', function(){
 	del(['build/*']);
+	console.log('finished cleaning build directory');
 });
 
-gulp.task('build-home', function() {
-  return gulp.src(['index.html'])
-  	.pipe(fileinclude({
-  		prefix: '@@',
-  		basepath:'@file'
-  	})).
-  	.pipe(gulp.dest("./build/"));
+gulp.task('getcss', function() {
+	return gulp.src([
+		'./css/bootstrap/css/bootstrap.min.css',
+		'./css/styles.css'])
+	.pipe(concat('styles.css'))
+	.pipe(gulp.dest('./build/css/'));
 });
 
-gulp.task('default', ['build-home']);
+gulp.task('getjs', function() {
+	return gulp.src([
+		'./css/bootstrap/js/bootstrap.min.js',
+		'./js/script.js'])
+	.pipe(concat('script.js'))
+	.pipe(gulp.dest('./build/js/'));
+}); 
+
+
+
+gulp.task('buildhome', function() {
+  gulp.src(['index.html'])
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    }))
+    .pipe(gulp.dest('./build/'));
+});
+
+gulp.task('default', ['getcss', 'getjs', 'buildhome']);

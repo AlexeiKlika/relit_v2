@@ -1,9 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('./includes/head.html',{
-	"title: "relit: The Heart of Evangelization",
+
+<!-- include head section -->
+@@include('./includes/head.html', {
+	"title": "relit: The Heart of Evangelization"
 })
+<!--end head section -->
+
 <body>
-	index
+
+<!-- include navigation bar -->
+@@include('./includes/nav.html', {
+	"linkactive1": "active",
+	"linkactive2": "",
+	"linkactive3": "",
+	"linkactive4": "",
+	"linkactive5": "",
+	"linkactive6": ""
+})
+<!-- end navigation bar -->
+
+<!--background video or still image -->
+<div class="video_wrapper">
+	<video class="video" muted loop autoplay>
+		<source src="./video/yosemite_hd_ii_hd.webm" type="video/webm">
+		<source src="./video/yosemite_hd_ii_hd.mp4" type="video/mp4">
+	</video>
+</div>
+
+<div class="main">
+	<header class="intro">
+		<h1>
+			<img class="relit-logo-large" src="./img/relit-logo-optimized.png" alt="relit: The Heart of Evangelization">
+		</h1>
+		<p class="catchphrase">The Heart of Evangelization</p>
+	</header>
+</div>
+
+
+
 </body>
 </html>

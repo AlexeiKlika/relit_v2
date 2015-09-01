@@ -1,0 +1,57 @@
+/*
+Useful Color Values:
+	relit maroon: #780001
+	relit orange: #780001
+
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.text-relit-maroon {
+	color:#780001;
+}
+
+.text-relit-orange {
+	color:#f1592a;
+}
+
+.video_wrapper {
+    background: #000;
+    width: 100%;
+    max-height: 715px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.main {
+	position:relative;
+	z-index:1;
+	padding-top:25px;
+}
+
+.video {
+    min-height: 715px;
+    min-width: 100%;
+}
+
+.relit-logo-large {
+	width:250px;
+	max-width:80%;
+	margin:0 auto;
+	display:block;
+	margin-top:50px;
+}
+
+.catchphrase {
+	font-weight:normal;
+	font-size:2em;
+	color:#fff;
+	text-align:center;
+
+}
