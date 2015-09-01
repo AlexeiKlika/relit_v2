@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 	del = require('del');
 
 gulp.task('clean', function(){
-	del(['./build/*'])
+	del(['build/*']);
 });
 
 gulp.task('build-home', function() {
@@ -13,7 +13,7 @@ gulp.task('build-home', function() {
   		prefix: '@@',
   		basepath:'@file'
   	})).
-  	.pipe.gulp.dest("./build/")
+  	.pipe(gulp.dest("./build/"));
 });
 
 gulp.task('default', ['build-home']);
