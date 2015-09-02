@@ -7,7 +7,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>relit: The Heart of Evangelization</title>
+	<link rel="icon" href="./favicon.ico" />
+
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./css/styles.css">
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="./js/script.js"></script>
@@ -46,14 +49,8 @@
         <li class=""><a href="program.html">Resources &amp; Video</a></li>
         <li class=""><a href="review.html">Parish Risk Free Review</a></li>
         <li class=""><a href="michael-dopp.html">Michael Dopp</a></li>
+        <li class="hidden-xs hidden-sm"><a class="scroll-to" style="color:#780001;font-weight:bold;" href="#" goto="">1-800-932-3051</a></li>
       </ul>
-      <!--
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="../navbar/">Default</a></li>
-        <li><a href="../navbar-static-top/">Static top</a></li>
-        <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
-      </ul>
-      -->
     </div><!--/.nav-collapse -->
   </div>
 </nav>
@@ -61,20 +58,161 @@
 
 <!--background video or still image -->
 <div class="video_wrapper">
-	<video class="video" muted loop autoplay>
-		<source src="./video/yosemite_hd_ii_hd.webm" type="video/webm">
-		<source src="./video/yosemite_hd_ii_hd.mp4" type="video/mp4">
+	<video class="video" id="main-video-bg" muted loop autoplay>
+		<source src="./video/1064599.mp4" type="video/mp4">
 	</video>
 </div>
 
-<div class="main">
-	<header class="intro">
-		<h1>
-			<img class="relit-logo-large" src="./img/relit-logo-optimized.png" alt="relit: The Heart of Evangelization">
-		</h1>
-		<p class="catchphrase">The Heart of Evangelization</p>
-	</header>
+<header class="intro">
+	<h1>
+		<img class="relit-logo-large" src="./img/relit-logo-optimized.png" alt="relit: The Heart of Evangelization">
+	</h1>
+	<p class="catchphrase">The Heart of Evangelization</p>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-3 hidden-sm hidden-xs">
+				<div class="grey-box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores, ab quis et voluptate ullam perspiciatis nobis. Maxime, autem quidem veniam adipisci alias eos reprehenderit repudiandae, deleniti. Delectus, cum, alias.</p>
+					<a href="#" class="relit-btn relit-btn-maroon">explore relit</a>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="grey-box">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores, ab quis et voluptate ullam perspiciatis nobis. Maxime, autem quidem veniam adipisci alias eos reprehenderit repudiandae, deleniti. Delectus, cum, alias.</p>
+					<a href="#" class="relit-btn relit-btn-orange">start relit</a>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<img id="home-scroll-down" class="scroll-to" goto="intro-icons" src="./img/down-arrow-white.png" alt="">
+			</div>
+		</div>
+	</div>
+	<div id="video-bg-volume" class="hidden-sm hidden-xs">
+		<span class="glyphicon glyphicon-volume-off text-relit-orange" aria-hidden="true"></span>
+	</div>
+</header>
+
+<div class="main" style="margin-top:35px;">
+
+
+	<!--Intro icon stripe section -->
+	<div id="intro-icons" class="stripe">
+	 <div class="container">
+		 <div class="row">
+		 	<div class="col-sm-3">
+		 		<h3>Pizza &amp; Coke</h3>
+		 		<i class="fa fa-film" aria-hidden="true"></i>
+		 	</div>
+		 	<div class="col-sm-3">
+		 		<h3>18 Training Sessions</h3>
+		 		<i class="fa fa-fire" aria-hidden="true"></i>
+		 	</div>
+		 	<div class="col-sm-3">
+		 		<h3>Pizza &amp; Coke</h3>
+		 		<i class="fa fa-th" aria-hidden="true"></i>
+		 	</div>
+		 	<div class="col-sm-3">
+		 		<h3>Pizza &amp; Coke</h3>
+		 		<i class="fa fa-th-list" aria-hidden="true"></i>
+		 	</div>
+		 </div>
+	 </div>
 </div>
+
+	<!--Introducing relit section -->
+	<section id="introducing" class="">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Introducing <span class="text-relit-orange">re</span><span class="text-relit-maroon">lit</span></h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<!-- 16:9 aspect ratio -->
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe src="https://player.vimeo.com/video/123668973" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+			<div class="col-md-6">Quo quibusdam id explicabo excepturi autem voluptas ducimus necessitatibus asperiores repudiandae itaque consectetur illum repellat, voluptatum possimus quis nulla sapiente sunt saepe libero, exercitationem dolor! Temporibus officiis, explicabo quisquam cum.</div>
+		</div>
+	</div>
+</section>
+
+	<!--Introducing relit section -->
+	<section id="stats">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Stats</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi minus sed nam quo architecto praesentium vero accusamus, fugit ad, fugiat possimus suscipit. Commodi nisi autem ipsum numquam, dicta nostrum enim.</div>
+			<div class="col-md-6">Quo quibusdam id explicabo excepturi autem voluptas ducimus necessitatibus asperiores repudiandae itaque consectetur illum repellat, voluptatum possimus quis nulla sapiente sunt saepe libero, exercitationem dolor! Temporibus officiis, explicabo quisquam cum.</div>
+			<div class="col-md-6">Deserunt repellendus perferendis iusto nostrum consectetur ratione officiis maxime alias distinctio. Est harum dicta repellat reprehenderit unde suscipit, perferendis, laudantium soluta provident dolore accusantium eos laborum quos a fuga vero.</div>
+			<div class="col-md-6">Magnam debitis, nostrum dignissimos officiis facilis aspernatur quis aliquam fugiat consequuntur. Sed reprehenderit, hic dignissimos ab asperiores commodi eos, fugit aliquam esse impedit molestiae aspernatur est distinctio omnis accusantium aliquid.</div>
+		</div>
+	</div>
+</section>
+
+</div>
+
+<!--Footer -->
+<footer>
+	<div class="stripe">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<img src="http://lorempixel.com/output/food-q-c-640-480-9.jpg" alt="">
+					<img src="http://lorempixel.com/output/food-q-c-640-480-3.jpg" alt="">
+					<img src="http://lorempixel.com/output/food-q-c-640-480-5.jpg" alt="">
+					<img src="http://lorempixel.com/output/food-q-c-640-480-10.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<ul>
+					<li>Lorem ipsum.</li>
+					<li>Commodi, quisquam.</li>
+					<li>Assumenda, est.</li>
+					<li>Officia, magnam.</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Lorem ipsum.</li>
+					<li>Iusto, tempore.</li>
+					<li>Repudiandae, nostrum.</li>
+					<li>Veniam, non.</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Lorem ipsum.</li>
+					<li>Odio, dicta?</li>
+					<li>Ipsa, aut.</li>
+					<li>Saepe, quaerat.</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Lorem ipsum.</li>
+					<li>Accusamus, beatae.</li>
+					<li>Ut, quod.</li>
+					<li>Distinctio, iste.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 
 
 

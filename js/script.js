@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$(".scroll-to").click(function() {
+	$(".scroll-to").click(function(event) {
 	    var offset = -50; //Offset of 20px
 	    var element = "#" + $(this).attr('goto');
 	    console.log(element);
@@ -8,6 +8,7 @@ $(document).ready(function(){
 	    $('html, body').animate({
 	        scrollTop: $(element).offset().top + offset
 	    }, 500);
+	    event.preventDefault();
 	});
 
 	// Mute Volume
@@ -18,12 +19,12 @@ $(document).ready(function(){
 			$v[0].muted = false;
 			$v[0].volume = 0;
 			$v.animate({volume: 1}, 1500);
-			$(this).removeClass('glyphicon-volume-up');
-			$(this).addClass('glyphicon-volume-off');
-		} else {
-			$v.animate({volume: 0}, 300);
 			$(this).removeClass('glyphicon-volume-off');
 			$(this).addClass('glyphicon-volume-up');
+		} else {
+			$v.animate({volume: 0}, 300);
+			$(this).removeClass('glyphicon-volume-up');
+			$(this).addClass('glyphicon-volume-off');
 			window.setTimeout(function(){
 				$v[0].muted = true;
 			}, 300);

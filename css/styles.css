@@ -1,18 +1,30 @@
 /*
 Useful Color Values:
 	relit maroon: #780001
-	relit orange: #780001
+	relit orange: #f1592a
 
 */
 
+@font-face {
+    font-family: 'Aleo Light';
+    src: url("../fonts/Aleo-Light.otf");
+}
+
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Source Sans Pro', serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Aleo Light', sans-serif;
 }
 
 h2 {
 	text-align:center;
 }
 
+.text-white {
+	color:#fff;
+}
 
 .text-relit-maroon {
 	color:#780001;
@@ -22,31 +34,67 @@ h2 {
 	color:#f1592a;
 }
 
+.bg-relit-maroon {
+	background-color:#780001;
+}
+
+.bg-relit-orange {
+	background-color:#f1592a;
+}
+
 .video_wrapper {
     background: #000;
     width: 100%;
     max-height: 715px;
     position: absolute;
-    top: 5px;
+    top: 0;
     left: 0;
     z-index: 0;
     overflow: hidden;
+    margin-top:50px;
 }
 
 .main {
 	position:relative;
 	z-index:1;
-	padding-top:25px;
+	margin-top:75px;
+	min-height:700px;
+}
+
+.grey-box {
+	background: url('../img/opacity-50.png');
+	padding:20px;
+	color:#fff;
+	border-radius:5px;
 }
 
 section {
-	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+.row {
+	padding-bottom:20px;
+}
+
+.stripe h3 {
+	margin-top:0;
+	font
+}
+.stripe .row > div {
+	/* use with .bg-relit-maroon, .text-relit-orange, or some other color */	
+	padding:30px 0;
+	text-align:center;
+}
+
+.stripe i.fa {
+	font-size:30px;
 }
 
 header.intro {
-	min-height:645px;
+	min-height:700px;
 	position:relative;
 }
+
 
 #video-bg-volume {
 	position:absolute;
@@ -65,6 +113,7 @@ header.intro {
 	display:block;
 	margin:0 auto;
 	cursor:pointer;
+	margin-top:80px;
 }
 
 .video {
@@ -78,6 +127,7 @@ header.intro {
 	margin:0 auto;
 	display:block;
 	margin-top:50px;
+	padding-top:25px;
 }
 
 .catchphrase {
@@ -86,6 +136,74 @@ header.intro {
 	color:#fff;
 	text-align:center;
 
+}
+
+/* section backgrounds */
+
+/* I DON'T LIKE THIS!!
+	#intro-icons {
+		background: url('../img/red-people-bg.jpg') no-repeat center center fixed; 
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+*/
+
+
+/* relit specific buttons & links*/
+
+.relit-link {
+	border-bottom: 2px dotted #780001;
+	text-decoration: none;
+	color: #780001;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+}
+
+.relit-link:hover {
+  color: #780001;
+  border-bottom: 2px dotted #780001;
+}
+
+.relit-btn, .relit-btn:visited {
+	cursor: pointer;
+	margin: 10px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 7px;
+	font-size: 22px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-o-transition: .3s;
+	display: inline-block;
+}
+
+.relit-btn:hover, .relit-btn:active, .relit-btn:focus {
+	text-decoration: none;
+} 
+
+.relit-btn-maroon, .relit-btn-maroon:visited  {
+	color: #780001;
+ 	border: 2px #780001 solid;
+}
+
+.relit-btn-maroon:hover, .relit-btn-maroon:active {
+	color: #fff;
+	background-color: #780001;
+}
+
+.relit-btn-orange, .relit-btn-orange:visited  {
+	color: #f1592a;
+ 	border: 2px #f1592a solid;
+}
+
+.relit-btn-orange:hover, .relit-btn-orange:active {
+	color: #fff;
+	background-color: #f1592a;
 }
 
 /* footer styles */
@@ -97,10 +215,6 @@ footer {
 
 footer a {
 	color:#fff;
-}
-
-footer > div {
-	padding:20px 0;
 }
 
 footer div.stripe {

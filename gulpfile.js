@@ -28,8 +28,15 @@ gulp.task('getjs', function() {
 
 
 
-gulp.task('buildhome', function() {
-  gulp.src(['index.html'])
+gulp.task('buildpages', function() {
+  gulp.src([
+  	'index.html',
+  	'details.html',
+  	'testimonials.html',
+  	'resources.html',
+  	'parish-review.html',
+  	'michael-dopp.html'
+  	])
     .pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -37,4 +44,4 @@ gulp.task('buildhome', function() {
     .pipe(gulp.dest('./build/'));
 });
 
-gulp.task('default', ['getcss', 'getjs', 'buildhome']);
+gulp.task('default', ['getcss', 'getjs', 'buildpages']);
