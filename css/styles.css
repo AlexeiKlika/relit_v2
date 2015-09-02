@@ -9,6 +9,10 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
+h2 {
+	text-align:center;
+}
+
 
 .text-relit-maroon {
 	color:#780001;
@@ -35,6 +39,34 @@ body {
 	padding-top:25px;
 }
 
+section {
+	margin-bottom: 2em;
+}
+
+header.intro {
+	min-height:645px;
+	position:relative;
+}
+
+#video-bg-volume {
+	position:absolute;
+	bottom:20px;
+	left:20px;
+}
+
+#video-bg-volume span {
+	font-size:30px;
+	padding:20px;
+	cursor:pointer;
+}
+
+#home-scroll-down {
+	width:50px;
+	display:block;
+	margin:0 auto;
+	cursor:pointer;
+}
+
 .video {
     min-height: 715px;
     min-width: 100%;
@@ -54,4 +86,31 @@ body {
 	color:#fff;
 	text-align:center;
 
+}
+
+/* footer styles */
+
+footer {
+	background-color:#373737;
+	color:#fff;
+}
+
+footer a {
+	color:#fff;
+}
+
+footer > div {
+	padding:20px 0;
+}
+
+footer div.stripe {
+	background-color:#555;
+	text-align:center;
+}
+
+footer div.stripe img {
+	display:inline-block;
+	padding: 15px;
+	width:100px;
+	max-width:100%;
 }

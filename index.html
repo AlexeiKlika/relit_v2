@@ -22,7 +22,7 @@
 
 <!--background video or still image -->
 <div class="video_wrapper">
-	<video class="video" muted loop autoplay>
+	<video class="video" id="main-video-bg" muted loop autoplay>
 		<source src="./video/yosemite_hd_ii_hd.webm" type="video/webm">
 		<source src="./video/yosemite_hd_ii_hd.mp4" type="video/mp4">
 	</video>
@@ -34,18 +34,37 @@
 			<img class="relit-logo-large" src="./img/relit-logo-optimized.png" alt="relit: The Heart of Evangelization">
 		</h1>
 		<p class="catchphrase">The Heart of Evangelization</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">stuff</div>
+				<div class="col-md-6">stuff hya too!</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">stuff</div>
+				<div class="col-md-6">stuff hya too!</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<img id="home-scroll-down" class="scroll-to" goto="introducing" src="./img/down-arrow.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="video-bg-volume" class="hidden-sm hidden-xs">
+			<span class="glyphicon glyphicon-volume-up text-relit-maroon" aria-hidden="true"></span>
+		</div>
 	</header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">stuff</div>
-			<div class="col-md-6">stuff hya too!</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">stuff</div>
-			<div class="col-md-6">stuff hya too!</div>
-		</div>
-	</div>
+
+
+	<!--Introducing relit section -->
+	@@include('./includes/index/introducing.html')
+
+	<!--Introducing relit section -->
+	@@include('./includes/index/stats.html')
+
 </div>
+
+<!--Footer -->
+@@include('./includes/footer.html')
 
 
 
