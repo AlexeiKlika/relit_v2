@@ -5,17 +5,20 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch');
 
 
+/*
 gulp.task('clean', function(){
 	del(['build/*']);
 	console.log('finished cleaning build directory');
 });
+
+*/
 
 gulp.task('getcss', function() {
 	return gulp.src([
 		'./css/bootstrap/css/bootstrap.min.css',
 		'./css/styles.css'])
 	.pipe(concat('styles.css'))
-	.pipe(gulp.dest('./build/css/'));
+	.pipe(gulp.dest('./relittraining.com/css/'));
 });
 
 gulp.task('getjs', function() {
@@ -23,7 +26,7 @@ gulp.task('getjs', function() {
 		'./css/bootstrap/js/bootstrap.min.js',
 		'./js/script.js'])
 	.pipe(concat('script.js'))
-	.pipe(gulp.dest('./build/js/'));
+	.pipe(gulp.dest('./relittraining.com/js/'));
 }); 
 
 
@@ -41,7 +44,7 @@ gulp.task('buildpages', function() {
       prefix: '@@',
       basepath: '@file'
     }))
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./relittraining.com/'));
 });
 
 gulp.task('default', ['getcss', 'getjs', 'buildpages']);
