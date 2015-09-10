@@ -17,6 +17,7 @@ Useful Color Values:
 
 body {
 	font-family: 'Source Sans Pro', serif;
+
 }
 
 h1, h2, h3 {
@@ -24,7 +25,23 @@ h1, h2, h3 {
 }
 
 h2 {
-	text-align:center;
+	/*text-align:center; */
+}
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+
+	/* Set up positioning */
+	position: fixed;
+	z-index:-1;
+	top: 0;
+	left: 0;
 }
 
 .text-white {
@@ -274,8 +291,65 @@ header.intro {
 	display:block;
 }
 
+/* downloads section */
+
+.downloadSection {
+	margin-bottom: 20px;
+	text-align: center;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+}
+
+.downloadSection img {
+	max-width:100%;
+	border:1px solid #dfdfdf;
+}
+
 /* footer styles */
 
+footer {
+	/* allows for fixed position (persistant) footer */
+	margin-top: 140px ;
+}
+
+.persistant-footer {
+    background-color: #3d3c3e;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    border-width: 2px 0 0 0;
+    border-color: #f1592a;
+    border-style: solid;
+}
+
+.persistant-footer .row {
+	padding-bottom:0;
+}
+
+.persistant-footer img {
+	max-height:50px;
+	max-width:100%;
+
+	/* too make the logo feel more centered */
+	position:relative;
+	top:-5px;
+}
+
+@media (max-width: 767px) {
+
+	footer {
+		margin-top:0;
+	}
+
+	.persistant-footer {
+		position:static;
+	}
+}
+
+/*
 footer {
 	background-color:#373737;
 	color:#fff;
@@ -304,3 +378,4 @@ footer div.stripe img {
 .footer-list {
 	padding-top:20px;
 }
+*/

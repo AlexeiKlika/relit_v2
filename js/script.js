@@ -43,8 +43,8 @@ $(document).ready(function(){
 			$(this).addClass('video-selected');	
 			$('#main-video-player').attr('src', go_to);
 			window.setTimeout(function(){
-				$('.white-cover').fadeOut(1500);
-			},500);
+				$('.white-cover').fadeOut(500);
+			},1000);
 		}
 	});
 
