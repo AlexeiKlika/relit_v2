@@ -31,6 +31,10 @@ h2 {
 	border: 2px solid #C7AFAF;
 }
 
+img {
+	max-width: 100%;
+}
+
 img.bg {
 	/* Set rules to fill background */
 	min-height: 100%;
@@ -45,6 +49,10 @@ img.bg {
 	z-index:-1;
 	top: 0;
 	left: 0;
+}
+
+img.circle {
+	border-radius:50%;
 }
 
 .text-white {
