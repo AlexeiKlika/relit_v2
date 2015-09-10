@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
 
 	$(".scroll-to").click(function(event) {
@@ -31,6 +33,20 @@ $(document).ready(function(){
 		}
 	});
 
+	$(".thumb-container").click(function() {
+		console.log('thumb container clicked...')
+		var go_to = $(this).attr('go-video');
+		var current = $('#main-video-player').attr('src');
+		if (go_to !== current) {
+			$('.white-cover').stop(true, true).fadeIn(100);
+			$('.thumb-container').removeClass('video-selected');
+			$(this).addClass('video-selected');	
+			$('#main-video-player').attr('src', go_to);
+			window.setTimeout(function(){
+				$('.white-cover').fadeOut(1500);
+			},500);
+		}
+	});
 
 
 });

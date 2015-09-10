@@ -22,7 +22,16 @@
 <div class="main">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet harum quidem natus explicabo enim illum porro consequuntur iste dicta officia. Sit nobis recusandae, facilis quibusdam vel dolores delectus reprehenderit rerum.</div>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe id="main-video-player" src="https://player.vimeo.com/video/123668973" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+				  <div class="white-cover"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- include resources video playlist -->
+			@@include('./includes/resources/video-playlist.html')
 		</div>
 	</div>
 </div>
