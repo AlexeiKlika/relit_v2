@@ -276,6 +276,10 @@ header.intro {
 	width:100%;
 }
 
+.video-thumb {
+	position:relative;
+}
+
 .thumb-container {
     position: relative;
     display: inline-block;
@@ -301,7 +305,8 @@ header.intro {
     left: 0;
     width: 100%;
     text-align: center;
-    top: 30%;
+    top: 50%;
+    margin-top:-15px;
 }
 
 .thumb-container.video-selected img {

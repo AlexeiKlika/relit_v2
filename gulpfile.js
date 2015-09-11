@@ -23,6 +23,7 @@ gulp.task('getcss', function() {
 
 gulp.task('getjs', function() {
 	return gulp.src([
+        './js/modernizr.custom.48411.js',
 		'./css/bootstrap/js/bootstrap.min.js',
 		'./js/script.js'])
 	.pipe(concat('script.js'))
