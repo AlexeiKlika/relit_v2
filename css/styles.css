@@ -2,6 +2,7 @@
 Useful Color Values:
 	relit maroon: #780001
 	relit orange: #f1592a
+	charcoal background: #3d3c3e;
 
 */
 
@@ -20,6 +21,15 @@ h1, h2, h3 {
 
 h2 {
 	/*text-align:center; */
+}
+
+blockquote {
+    padding: 5px 10px;
+    margin: 0 0 15px 0;
+    font-size: 1em;
+    border-left: 5px solid #780001;
+    font-weight: bold;
+    color: #780001;
 }
 
 .embed-responsive {
@@ -48,6 +58,10 @@ img.bg {
 
 img.circle {
 	border-radius:50%;
+}
+
+.grey-bg {
+	background-color:#3d3c3e;
 }
 
 .text-white {
@@ -329,6 +343,18 @@ header.intro {
 .downloadSection img {
 	max-width:100%;
 	border:1px solid #dfdfdf;
+}
+
+/* michael dopp section */
+
+.org-bar {
+	text-align:center;
+}
+
+.org-bar img {
+	max-width:100%;
+	max-height:70px;
+	margin:15px;
 }
 
 /* footer styles */
