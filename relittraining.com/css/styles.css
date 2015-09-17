@@ -20,11 +20,13 @@ body {
 	font-family: 'Source Sans Pro', serif;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color: #555;
-    border-bottom: 2px solid #f1592a;
-    font-weight: bold;
-    background:none;
+@media (min-width: 768px) {
+	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	    color: #555;
+	    border-bottom: 2px solid #f1592a;
+	    font-weight: bold;
+	    background:none;
+	}
 }
 
 h1, h2, h3 {
@@ -90,7 +92,7 @@ img.bg {
 
 	/* Set up positioning */
 	position: fixed;
-	z-index:-1;
+	z-index:-2;
 	top: 0;
 	left: 0;
 }
@@ -121,18 +123,6 @@ img.circle {
 
 .bg-relit-orange {
 	background-color:#f1592a;
-}
-
-.video_wrapper {
-    background: #000;
-    width: 100%;
-    max-height: 715px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    overflow: hidden;
-    margin-top:50px;
 }
 
 .main {
@@ -176,21 +166,24 @@ section {
 }
 
 header.intro {
-	min-height:700px;
 	position:relative;
+	overflow:hidden;
 }
 
+header img.bg {
+	min-height: 100%;
+	min-width: 1000px;
 
-#video-bg-volume {
-	position:absolute;
-	bottom:20px;
-	left:20px;
-}
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
 
-#video-bg-volume span {
-	font-size:30px;
-	padding:20px;
-	cursor:pointer;
+	/* Set up positioning */
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	z-index: -1;
 }
 
 #home-scroll-down {
@@ -218,7 +211,7 @@ header.intro {
 .catchphrase {
 	font-weight:normal;
 	font-size:2em;
-	color:#fff;
+	color:#650000;
 	text-align:center;
 
 }
