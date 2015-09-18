@@ -191,7 +191,6 @@ header img.bg {
 	display:block;
 	margin:0 auto;
 	cursor:pointer;
-	margin-top:50px;
 }
 
 .video {
@@ -329,7 +328,7 @@ header img.bg {
 .thumb-container {
     position: relative;
     display: inline-block;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .thumb-container img {
