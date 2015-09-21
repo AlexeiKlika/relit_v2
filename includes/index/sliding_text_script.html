@@ -1,0 +1,32 @@
+<script>
+$(document).ready(function(){
+    (function slideText() {
+        var i = 0;
+        var $slides = $('.sliding-text div');
+
+        setInterval(function(){
+            $slides.eq(i).removeClass('opacity1');
+            $slides.eq(i).addClass('opacity0');
+            i < $slides.length - 1 ? i++ : i = 0;
+            setTimeout(function(){
+                $slides.eq(i).addClass('opacity1');
+            },900);
+            $slides.eq(i).removeClass('opacity0');
+            if (i == 0) {
+                $slides.last().css('visibility', 'hidden');
+                for (var c = 1; c < $slides.length; c++) {
+                    $slides.eq(c).removeClass("top-stack");
+                    $slides.eq(c).addClass("bottom-stack");
+                }
+                setTimeout(function(){$slides.last().css('visibility', 'visible');},3000);
+            } else {
+                setTimeout(function(){
+                    $slides.eq(i).removeClass("bottom-stack");
+                    $slides.eq(i).addClass("top-stack");
+                },200);
+            }
+
+        },3500);
+    })();
+});
+</script>

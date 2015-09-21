@@ -128,7 +128,7 @@ img.circle {
 .main {
 	position:relative;
 	z-index:1;
-	margin-top:75px;
+	padding-top:40px;
 	min-height:700px;
 }
 
@@ -186,6 +186,42 @@ header img.bg {
 	z-index: -1;
 }
 
+/*scrolling text styles */
+
+.sliding-text-static {
+	font-size:32px;
+	text-align:center;
+}
+
+.sliding-text-wrapper{
+    position:relative;
+    height:46px;
+    font-size:40px;
+    text-align:center;
+}
+.sliding-text > div{
+    position:absolute;
+    width:100%;
+    transition: opacity 1.5s, transform 1s;
+}
+.sliding-text > div.top-stack {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    
+}
+.sliding-text > div.bottom-stack {
+    transform: matrix(1, 0, 0, 1, -100, 0)
+}
+
+.sliding-text > div.opacity1 {
+    opacity:1;
+}
+
+.sliding-text > div.opacity0 {
+    opacity:0;
+}
+
+/*end scrolling text styles */
+
 #home-scroll-down {
 	width:50px;
 	display:block;
@@ -209,7 +245,7 @@ header img.bg {
 
 .catchphrase {
 	font-weight:normal;
-	font-size:2em;
+	font-size:1.4em;
 	color:#650000;
 	text-align:center;
 

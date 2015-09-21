@@ -9,6 +9,10 @@
 
 <body>
 
+<!-- page specific scripts -->
+@@include('./includes/index/sliding_text_script.html')
+
+
 <!-- include navigation bar -->
 @@include('./includes/nav.html', {
 	"linkactive1": "active",
@@ -29,56 +33,55 @@
 	<p class="catchphrase">The Heart of Evangelization</p>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3 col-md-offset-3 col-sm-6 col-sm-offset-3 hidden-sm hidden-xs">
-				<div class="grey-box">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae asperiores, ab quis et voluptate ullam perspiciatis nobis. Maxime, autem quidem veniam adipisci alias eos reprehenderit repudiandae, deleniti. Delectus, cum, alias.</p>
-					<a href="#" class="relit-btn relit-btn-orange">start relit</a>
-				</div>
+			<div class="col-md-12 sliding-text-static">
+				Train the evangelized
 			</div>
-
-			<!-- <div class="clearfix visible-xs-block visible-sm-block"></div> -->
-
-			<div class="col-md-3 col-sm-6 col-sm-offset-3 col-md-offset-0">
-				<div class="grey-box" style="background:none;">
-					<table class="feature-table">
-						<tbody>
-							<tr>
-								<td><i class="fa fa-check" aria-hidden="true"></i></td>
-								<td>Training and Formation</td>
-							</tr>
-							<tr>
-								<td><i class="fa fa-check" aria-hidden="true"></i></td>
-								<td>Reshapes the Parish, as well as the Individual</td>
-							</tr>
-							<tr>
-								<td><i class="fa fa-check" aria-hidden="true"></i></td>
-								<td>Practical Evangelization</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="col-md-12">
+				<div class="sliding-text-wrapper">
+				    <div class="sliding-text">
+				        <div class="top-stack opacity1">
+				            how to evangelize
+				        </div>
+				        <div class="bottom-stack opacity0">
+				            how to unite your parish
+				        </div>
+				        <div class="bottom-stack opacity0">
+				            how to lorem ipsum
+				        </div>
+				    </div>
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
 			<div class="col-md-12">
-				<img id="home-scroll-down" class="scroll-to" goto="intro-icons" src="./img/down-arrow-white.png" alt="">
+				<img id="home-scroll-down" class="scroll-to" goto="main" src="./img/down-arrow-white.png" alt="">
 			</div>
 		</div>
 	</div>
 
 </header>
 
-<div class="main" style="margin-top:35px;">
+<div id="main" class="main">
 
+<!--Bakkelund quote section -->
+@@include('./includes/index/bakkelund.html')
 
-	<!--Intro icon stripe section -->
-	@@include('./includes/index/intro-icons.html')
+<!--relit transforms section -->
+@@include('./includes/index/relit_transforms.html')
 
-	<!--Introducing relit section -->
-	@@include('./includes/index/introducing.html')
+<!--relit transforms section -->
+@@include('./includes/index/training_program.html')
 
-	<!--Introducing relit section -->
-	@@include('./includes/index/stats.html')
+<!--need for training section -->
+@@include('./includes/index/need_for_training.html')
+
+<!--need for training section -->
+@@include('./includes/index/what_is_relit.html')
+
+<!--need for training section -->
+@@include('./includes/index/risk_free_review.html')
+
 
 </div>
 
