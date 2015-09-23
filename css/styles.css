@@ -26,6 +26,7 @@ body {
 
 h1, h2, h3 {
 	font-family: 'Aleo Light', sans-serif;
+	color:#780001;
 }
 
 h1 {
@@ -37,14 +38,13 @@ h1 {
     display: inline-block;
     padding: 8px 0 10px 0;
     */
-    color:#780001;
+
 }
 
 
 h2 {
 	/*text-align:center; */
 	font-weight: bold;
-	color: #780001;
 }
 
 
@@ -393,7 +393,7 @@ header img.bg {
 
 .thumb-container img {
 	max-width:100%;
-	border:2px solid #780001;
+	border:1px solid #780001;
 	border-radius: 10px 0 10px 0;
 }
 
@@ -402,6 +402,12 @@ header img.bg {
 	margin:0 auto;
 	color: #780001;
 }
+
+.thumb-container i:before {
+	text-shadow: 0px 0px 10px #D6A898;
+}
+
+
 
 .thumb-overplay {
     display: none;
@@ -416,6 +422,7 @@ header img.bg {
 
 .thumb-container.video-selected img {
 	border-color:#f1592a;
+	border-width: 2px;
 }
 
 .thumb-container.video-selected .thumb-overplay {

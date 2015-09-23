@@ -1,8 +1,6 @@
-
-
 $(document).ready(function(){
 
-	$(".scroll-to").click(function(event) {
+	$(".scroll-to").click(function() {
 	    var offset = -50; //Offset of 20px
 	    var element = "#" + $(this).attr('goto');
 	    console.log(element);
@@ -18,11 +16,13 @@ $(document).ready(function(){
 		var go_to = $(this).attr('go-video');
 		var current = $('#main-video-player').attr('src');
 		if (go_to !== current) {
-			$('.white-cover').stop(true, true).fadeIn(100);
+			$('.white-cover').show();
+			$('#main-video-player').css('visibility', "hidden");
 			$('.thumb-container').removeClass('video-selected');
 			$(this).addClass('video-selected');	
 			$('#main-video-player').attr('src', go_to);
 			window.setTimeout(function(){
+				$('#main-video-player').css('visibility', "visible");
 				$('.white-cover').fadeOut(500);
 			},1000);
 		}
