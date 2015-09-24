@@ -11,10 +11,6 @@ Useful Color Values:
 
 */
 
-@font-face {
-    font-family: 'Aleo Light';
-    src: url("../fonts/Aleo-Light.otf");
-}
 
 body {
 	font-family: 'Source Sans Pro', serif;
@@ -30,7 +26,7 @@ body {
 }
 
 h1, h2, h3 {
-	font-family: 'Aleo Light', sans-serif;
+	/*font-family: 'Aleo Light', sans-serif;*/
 	color:#780001;
 }
 
@@ -50,6 +46,13 @@ h1 {
 h2 {
 	/*text-align:center; */
 	font-weight: bold;
+}
+
+
+.full-width .row {
+	padding: 30px 0;
+	text-align:center;
+	font-size:16px;
 }
 
 
