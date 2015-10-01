@@ -47,7 +47,15 @@ h1 {
 	font-weight:300;
 }
 
+.homeTitle {
+	color:#fff;
+	text-align:center;
+	font-size:36px;
+}
 
+.homeTitle > div:nth-child(2) {
+	font-size:64px;
+}
 
 
 .full-width .row {
@@ -231,6 +239,7 @@ section {
 header.intro {
 	position:relative;
 	overflow:hidden;
+	height:100vh;
 }
 
 header img.bg {
@@ -249,16 +258,17 @@ header img.bg {
 	z-index: -1;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
+/*
+@media screen and (max-width: 1024px) { 
   header img.bg {
     left: 50%;
-    margin-left: -512px;   /* 50% */
+    margin-left: -512px;   50% 
   }
 }
 
 @media screen and (min-width: 1024px) {
 	header {
-		min-height:450px;
+		/min-height:450px;
 	}
 }
 
@@ -267,6 +277,7 @@ header img.bg {
 		min-height:550px;
 	}
 }
+*/
 
 
 /*scrolling text styles */
@@ -595,7 +606,7 @@ footer {
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 20000px) {
 
 	footer {
 		margin-top:0;
