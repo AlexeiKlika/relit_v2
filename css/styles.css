@@ -86,6 +86,7 @@ blockquote {
 .cite {
 	position: relative;
 	padding-left:65px;
+	padding-top:10px;
 	font-size: 24px;
 	color:#333333;
 }
@@ -100,6 +101,16 @@ blockquote {
     top: -40px;
     color: #780001;
 }
+
+.full-row .cite , .full-row  .cite:before, .full-row blockquote {
+	color:#fff;
+}
+
+.full-row blockquote {
+	border-width:0;
+	padding:5px 0;
+}
+
 
 .embed-responsive {
 	border: 2px solid #C7AFAF;
@@ -135,6 +146,15 @@ img.circle {
 
 .grey-bg {
 	background-color:#3d3c3e;
+}
+
+.full-row {
+	background-color:#780001;
+	padding:30px 0;
+}
+
+.full-row .row {
+	padding:0;
 }
 
 .text-white {
