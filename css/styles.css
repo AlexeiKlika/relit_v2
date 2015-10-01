@@ -52,6 +52,14 @@ h1 {
 	font-size:64px;
 }
 
+.icon {
+	text-align:center;
+}
+
+.icon img {
+	max-width:60px;
+	margin-bottom:20px;
+}
 
 .full-width .row {
 	padding: 30px 0;
