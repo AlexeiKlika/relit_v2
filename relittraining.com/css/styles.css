@@ -287,6 +287,20 @@ header img.bg {
 
 /*end scrolling text styles */
 
+.try-now {
+	text-align:center;
+	background:url(../img/home/flame-tile.png);
+	min-height:128px;
+}
+
+@media screen and (min-width: 768px) {
+	.try-now {
+		display:table;
+	}
+}
+
+
+
 #home-scroll-down {
 	width:50px;
 	display:block;
