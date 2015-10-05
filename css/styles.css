@@ -9,6 +9,7 @@ Useful Color Values:
 
 body {
 	font-family: 'Source Sans Pro', serif;
+	overflow-y:scroll;
 }
 
 @media (min-width: 768px) {
@@ -43,13 +44,16 @@ h1 {
 }
 
 .homeTitle {
-	color:#fff;
-	text-align:center;
-	font-size:36px;
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+    text-shadow: 2px 2px 2px #000;
 }
 
-.homeTitle > div:nth-child(2) {
-	font-size:64px;
+@media (max-width: 767px) {
+	.homeTitle {
+		font-size:28px;
+	}	
 }
 
 .icon {
@@ -69,7 +73,7 @@ h1 {
 
 @media (min-width: 768px) {
 	.big-space {
-		margin-bottom:30px;
+		margin-bottom:50px;
 	}	
 }
 
@@ -84,6 +88,14 @@ h1 {
 	.row .col-md-6, .row .col-md-4, .row .col-md-3, .row .col-md-2 {
 		margin-bottom:15px;
 	}
+}
+
+.quote-white {
+	/*
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 5px;
+    border-radius: 15px;
+    */
 }
 
 blockquote {
@@ -165,8 +177,8 @@ img.circle {
 }
 
 .full-row {
-	background-color:#780001;
-	padding:30px 0;
+	background-color: #802F16;
+	padding:45px 0;
 }
 
 .full-row .row {
@@ -333,8 +345,6 @@ header img.bg {
 	}
 }
 
-
-
 #home-scroll-down {
 	width:50px;
 	display:block;
@@ -348,7 +358,7 @@ header img.bg {
 }
 
 .relit-logo-large {
-	width:120px;
+	width:220px;
 	max-width:80%;
 	margin:0 auto;
 	display:block;
@@ -357,11 +367,17 @@ header img.bg {
 }
 
 .catchphrase {
-	font-weight:normal;
-	font-size:1.4em;
-	color:#650000;
-	text-align:center;
+    font-weight: normal;
+    font-size: 2.4em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 1px #6B3434;
+}
 
+@media (max-width: 767px) {
+	.catchphrase {
+		font-size:22px;
+	}	
 }
 
 /* section backgrounds */
