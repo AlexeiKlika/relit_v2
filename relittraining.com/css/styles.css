@@ -15,6 +15,7 @@ Useful Color Values:
 body {
 	font-family: 'Source Sans Pro', serif;
 	overflow-y:scroll;
+    font-size:16px;
 }
 
 @media (min-width: 768px) {
@@ -66,7 +67,7 @@ h1 {
 }
 
 .icon img {
-	max-width:60px;
+	max-width:45px;
 	margin-bottom:20px;
 }
 
