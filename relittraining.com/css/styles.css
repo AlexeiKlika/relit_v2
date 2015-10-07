@@ -260,6 +260,9 @@ header.intro {
 	position:relative;
 	overflow:hidden;
 	height:100vh;
+	background:url(../img/home/landingpage_smileRev1.0.jpg);
+	background-size:cover;
+	background-position: center;
 }
 
 header img.bg {
