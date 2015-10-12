@@ -412,7 +412,7 @@ div.ministries > div:nth-child(6) {
 }
 
 .relit-logo-large {
-	width:220px;
+	width:400px;
 	max-width:80%;
 	margin:0 auto;
 	display:block;
@@ -689,3 +689,30 @@ footer {
 		position:static;
 	}
 }
+
+.flame-list {
+    list-style-type: none;
+
+}
+
+.flame-list > li {
+    margin-bottom:17px;
+    position:relative;
+}
+
+.flame-list > li:before {
+    left: -30px;
+    top: -4px;
+    content: '';
+    background: url(../img/relit-flame.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 30px;
+    width: 16px;
+}
+
+
+
+
+
