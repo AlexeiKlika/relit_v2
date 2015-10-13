@@ -311,33 +311,33 @@ div.ministries {
 /**/
 
 div.ministries > div {
-    background-color:#f79a7c;
+    background-color:#f1982c;
     padding:15px 0;
     margin:0 !important;
 }
 
 div.ministries > div:nth-child(1) {
-    background-color:#f79a7c;
+    background-color:#f1982c;
 }
 
 div.ministries > div:nth-child(2) {
-    background-color:#fdc47c;
+    background-color:#f15b2c;
 }
 
 div.ministries > div:nth-child(3) {
-    background-color:#fbb154;
+    background-color:#cb772b;
 }
 
 div.ministries > div:nth-child(4) {
-    background-color:#f47b56;
+    background-color:#cb4129;
 }
 
 div.ministries > div:nth-child(5) {
-    background-color:#f1592a;
+    background-color:#a25c25;
 }
 
 div.ministries > div:nth-child(6) {
-    background-color:#f19729;
+    background-color:#a32d21;
 }
 
 
