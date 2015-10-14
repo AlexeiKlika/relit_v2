@@ -706,6 +706,12 @@ footer {
     width: 16px;
 }
 
+#PopupSignupForm_0 {
+    position:relative;
+    z-index:2000;
+}
+
+
 
 
 
