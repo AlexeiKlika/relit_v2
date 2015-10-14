@@ -217,7 +217,7 @@ img.circle {
 	position:relative;
 	z-index:1;
 	padding-top:40px;
-	min-height:700px;
+	min-height:800px;
 }
 
 .main a {
@@ -400,6 +400,10 @@ div.ministries > div:nth-child(6) {
 	display:block;
 	margin:0 auto;
 	cursor:pointer;
+}
+
+.scroll-to {
+    cursor:pointer;
 }
 
 .video {
