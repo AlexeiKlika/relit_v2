@@ -1,0 +1,6 @@
+# BEGIN EXPIRES
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 5 seconds"
+</IfModule>
+# END EXPIRES
