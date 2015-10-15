@@ -10,7 +10,13 @@ Useful Color Values:
 body {
 	font-family: 'Source Sans Pro', serif;
 	overflow-y:scroll;
-    font-size:16px;
+    font-size:14px;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size:16px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -49,11 +55,14 @@ h1 {
     text-align: center;
     font-size: 64px;
     text-shadow: 2px 2px 2px #000;
+    line-height: 72px;
 }
 
 @media (max-width: 767px) {
 	.homeTitle {
-		font-size:28px;
+		font-size:26px;
+        line-height:30px;
+        text-shadow: 1px 1px 1px #000;
 	}	
 }
 
@@ -72,11 +81,17 @@ h1 {
 	font-size:16px;
 }
 
+.big-space {
+    margin-bottom:20px;
+}   
+
+
 @media (min-width: 768px) {
 	.big-space {
 		margin-bottom:50px;
 	}	
 }
+
 
 /* spacing for full width columns */
 @media (max-width: 767px) {
@@ -129,6 +144,10 @@ blockquote {
     letter-spacing: -8px;
     top: -40px;
     color: #780001;
+}
+
+.quote-white .cite {
+    font-size:2em;
 }
 
 .full-row .cite , .full-row  .cite:before, .full-row blockquote {
@@ -216,7 +235,6 @@ img.circle {
 .main {
 	position:relative;
 	z-index:1;
-	padding-top:40px;
 	min-height:800px;
 }
 
@@ -224,6 +242,17 @@ img.circle {
 	color:#780001;
 }
 
+#pre-main {
+    padding: 1.8em;
+    border-radius: 10px;
+    background: #FFFBF9;
+    margin-top: -5em;
+    border: 1px solid #F9E8DB;
+}
+
+#pre-main h2 {
+    margin-top:0;
+}
 .grey-box {
 	background: url('../img/opacity-50.png');
 	padding:20px;
@@ -256,7 +285,7 @@ section {
 header.intro {
 	position:relative;
 	overflow:hidden;
-	height:100vh;
+	min-height:100vh;
 	background:url(../img/home/landingpage_smileRev1.0.jpg);
 	background-size:cover;
 	background-position: center;
@@ -412,7 +441,7 @@ div.ministries > div:nth-child(6) {
 }
 
 .relit-logo-large {
-	width:400px;
+	width:300px;
 	max-width:80%;
 	margin:0 auto;
 	display:block;
@@ -422,10 +451,15 @@ div.ministries > div:nth-child(6) {
 
 .catchphrase {
     font-weight: normal;
-    font-size: 2.4em;
+    font-size: 1.9em;
     color: #fff;
     text-align: center;
     text-shadow: 1px 1px 1px #6B3434;
+}
+
+.graphic-title {
+    font-size:1.2em;
+    font-weight:bold;
 }
 
 @media (max-width: 767px) {
@@ -448,6 +482,16 @@ div.ministries > div:nth-child(6) {
 
 
 /* relit specific buttons & links*/
+
+#pre-main .graphic-icon {
+    text-align:center;
+}
+
+@media (max-width: 767px) {
+    #pre-main .graphic-icon img {
+        max-width:100px;
+    }
+}
 
 .relit-link {
 	border-bottom: 2px dotted #780001;
@@ -472,6 +516,7 @@ div.ministries > div:nth-child(6) {
 	-moz-transition: .3s;
 	-o-transition: .3s;
 	display: inline-block;
+    box-sizing:border-box;
 }
 
 .relit-btn:hover, .relit-btn:active, .relit-btn:focus {
@@ -499,6 +544,38 @@ div.ministries > div:nth-child(6) {
 	/*color: #fff;*/
 	/*background-color: #f1592a;*/
 	border: 2px #780001 solid;
+}
+
+.relit-btn-white, .relit-btn-white:visited, .relit-btn-white:focus{
+    width:100%;
+    color:#fff;
+    border: 2px #fff solid;
+    text-align:center;
+}
+
+.relit-btn-white:hover, .relit-btn-white:active {
+    color:#3d3c3e;
+    border: 2px #fff solid;
+    background-color:rgb(250,250,250);
+    background:rgba(255,255,255,0.25);
+}
+
+.relit-btn-white-filled, .relit-btn-white-filled:visited, .relit-btn-white-filled:focus  {
+    width:100%;
+    color:#3d3c3e;
+    background-color:;
+    background:#fff;
+    text-align:center;
+    border:2px #fff solid;
+    /*border: 2px #fff solid;*/
+}
+
+.relit-btn-white-filled:hover, .relit-btn-white-filled:active  {
+    color:#3d3c3e;
+    background-color:#efefef;
+    background:rgba(255,255,255,0.55);
+    background-color:;
+
 }
 
 .feature-table td {
