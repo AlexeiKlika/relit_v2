@@ -236,6 +236,7 @@ img.circle {
 	position:relative;
 	z-index:1;
 	min-height:800px;
+    margin-top:53px;
 }
 
 .main a {
@@ -246,7 +247,7 @@ img.circle {
     padding: 1.8em;
     border-radius: 10px;
     background: #FFFBF9;
-    margin-top: -5em;
+    margin-top: -10em;
     border: 1px solid #F9E8DB;
 }
 
@@ -270,8 +271,8 @@ section {
 
 .stripe h3 {
 	margin-top:0;
-	font
 }
+
 .stripe .row > div {
 	/* use with .bg-relit-maroon, .text-relit-orange, or some other color */	
 	padding:30px 0;
@@ -286,7 +287,7 @@ header.intro {
 	position:relative;
 	overflow:hidden;
 	min-height:100vh;
-	background:url(../img/home/landingpage_smileRev1.0.jpg);
+	background:url(../img/home/peeps.jpg);
 	background-size:cover;
 	background-position: center;
 }
@@ -524,12 +525,12 @@ div.ministries > div:nth-child(6) {
 } 
 
 .relit-btn-maroon, .relit-btn-maroon:visited  {
-	color: #780001;
- 	border: 2px #780001 solid;
+	color: #fff !important;
+ 	background-color: #780001;
 }
 
 .relit-btn-maroon:hover, .relit-btn-maroon:active {
-	color: #fff;
+	color: #fff !important;
 	background-color: #780001;
 }
 
@@ -695,7 +696,7 @@ footer {
 
 .persistant-footer {
     background-color: #3d3c3e;
-    padding: 15px;
+    padding: 35px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -704,14 +705,13 @@ footer {
     border-width: 2px 0 0 0;
     border-color: #f1592a;
     border-style: solid;
-    color:#fff;
+    color: #DADADA;
     font-size:16px;
-    text-align:right;
     line-height:35px;
 }
 
 .persistant-footer a {
-	color:#fff !important;
+	color: #DADADA !important;
 	border-bottom: 2px dotted #f1592a;
 }
 
@@ -735,19 +735,6 @@ footer {
 
 .footer-logo {
 	margin-right: 20px;
-}
-
-.footer-text br {
-	display:none;
-}
-
-@media (max-width: 375px) {
-	.footer-text {
-		line-height:25px;
-	}
-	.footer-text br {
-		display:block;
-	}
 }
 
 @media (max-width: 20000px) {
