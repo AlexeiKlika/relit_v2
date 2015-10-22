@@ -83,7 +83,11 @@ h1 {
 
 .big-space {
     margin-bottom:20px;
-}   
+}
+
+.small-space {
+    margin-bottom:8px;
+}  
 
 
 @media (min-width: 768px) {
@@ -219,7 +223,7 @@ img.circle {
 }
 
 .bg-relit-maroon {
-	background-color:#780001;
+	background-color:#780001 !important;
 }
 
 .bg-relit-orange {
