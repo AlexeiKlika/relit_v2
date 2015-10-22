@@ -151,7 +151,7 @@ blockquote {
 }
 
 .quote-white .cite {
-    font-size:2em;
+    font-size:1.5em;
 }
 
 .full-row .cite , .full-row  .cite:before, .full-row blockquote {
@@ -291,7 +291,7 @@ header.intro {
 	position:relative;
 	overflow:hidden;
 	min-height:100vh;
-	background:url(../img/home/peeps.jpg);
+	background:url(../img/home/peeps-original.jpg);
 	background-size:cover;
 	background-position: center;
 }
@@ -467,6 +467,19 @@ div.ministries > div:nth-child(6) {
     font-weight:bold;
 }
 
+.graphic-title span {
+    font-size:1.6em;
+    border-bottom:0 !important;
+}
+
+@media (max-width: 767px) {
+    .graphic-title span {
+        font-size:1.3em;
+    }
+}
+
+
+
 @media (max-width: 767px) {
 	.catchphrase {
 		font-size:22px;
@@ -559,7 +572,7 @@ div.ministries > div:nth-child(6) {
 }
 
 .relit-btn-white:hover, .relit-btn-white:active {
-    color:#3d3c3e;
+    color:#fff;
     border: 2px #fff solid;
     background-color:rgb(250,250,250);
     background:rgba(255,255,255,0.25);
