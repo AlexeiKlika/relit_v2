@@ -7,5 +7,6 @@ DirectoryIndex index.html
 <IfModule mod_expires.c>
     ExpiresActive On
     ExpiresByType text/css "access plus 5 seconds"
+    ExpiresByType text/html "access plus 10 seconds"
 </IfModule>
 # END EXPIRES
